@@ -8,29 +8,18 @@
     use Symfony\Component\Routing\Annotation\Route;
 
     //controller class HomeController
-    class HomeController extends AbstractController
+    class PostController extends AbstractController
     {
         //annotation to declare route of method response
         /**
-            * @Route("/home", name="home")
+            * @Route("/post", name="post")
         */
         
-        public function home()
+        public function postDream()
         {
-            
-            $view = 'home.html.twig';
+            $view = 'post.html.twig';
 
             return $this->render($view);
-        }
-
-        /**
-            * @Route("/", name="error")
-        */
-        public function error()
-        {
-            return new Response(
-                '<html><body style="text-align: center";><h1>404 error</h1><h2>Sorry we could not find that page</h2></body></html>'
-            );
         }
     }
 ?>

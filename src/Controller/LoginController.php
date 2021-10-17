@@ -8,29 +8,21 @@
     use Symfony\Component\Routing\Annotation\Route;
 
     //controller class HomeController
-    class HomeController extends AbstractController
+    class LoginController extends AbstractController
     {
         //annotation to declare route of method response
         /**
-            * @Route("/home", name="home")
+            * @Route("/login", name="login")
         */
-        
-        public function home()
+
+        //method that will respond with HTML
+        public function login() // default ID value
         {
-            
-            $view = 'home.html.twig';
+            //identify twig template
+            $view = 'login.html.twig';
 
             return $this->render($view);
-        }
-
-        /**
-            * @Route("/", name="error")
-        */
-        public function error()
-        {
-            return new Response(
-                '<html><body style="text-align: center";><h1>404 error</h1><h2>Sorry we could not find that page</h2></body></html>'
-            );
+            
         }
     }
 ?>
