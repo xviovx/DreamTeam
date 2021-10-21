@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dream Team | Home</title>
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+
+            /*NAV CODE*/
+
+            .navbar-header{
+                width: 100%;
+                height: 90px;
+                background-color: #654A73;
+            }
+
+            .navbar-header ul{
+                text-decoration: none;
+                list-style-type: none;
+                display: inline-flex;
+                font-family: 'Raleway', sans-serif;
+                color: white;
+                font-weight: 800;
+            }
+
+            .navbar-header ul img{
+                width: 105px;
+                height: 60px;
+                margin-left: 120px;
+                margin-top: 10px;
+            }
+
+            .navbar-header ul li{
+                width: auto;
+                height: 30px;
+                background-color: #1D7B79;
+                margin-top: 25px;
+                margin-left: 195px;
+                margin-right: 50px;
+                padding: 4px 12px 10px;
+                border-radius: 5px;
+                text-transform: uppercase;
+            }
+
+            .navbar-header ul li:hover{
+                cursor: pointer;
+                background-color: white;
+                color: #1D7B79;
+            }
+
+            /*END OF NAV CODE*/
+            /*FOOTER CODE*/
+
+            .footer-panel{
+                width: 100%;
+                height: 72px;
+                background-color: #654A73;
+                bottom: 0;
+            }
+
+            .footer-panel a img{
+                width: 90px;
+                height: 50px;
+                margin-top: 10px;
+                margin-left: 230px;
+            }
+
+            .footer-panel p{
+                margin: 0;
+                margin-top: -35px;
+                font-family: 'Raleway', 'sans-serif';
+                text-transform: uppercase;
+                font-weight: 600;
+                text-align: center;
+                font-size: 14px;
+                color: white;
+            }
+
+            .socials-con{
+                margin: 0;
+                margin-right: 290px;
+                margin-top: -25px;
+                width: 250px;
+                height: 30px;
+                float: right;
+            }
+
+            .socials-con img{
+                margin-left: 55px;
+            }
+
+            .sign_in{
+                color: white;
+            }
+
+            .sign_in:hover{
+                background-color: white;
+                color: #1D7B79;
+                text-decoration: none;
+            }
+
+            /*END OF FOOTER CODE*/
+
+            /*SINGLE DREAM STYLES*/
+            .individual-dream-holder{
+                margin: 0 auto;
+                width: 75%;
+                height: 1750px;
+                background-color: #1d7b793d;
+                border-left: 3px solid #000000a2;
+                border-right: 3px solid #000000a2;
+                padding-top: 35px;
+            }
+
+            .dream-post-container{
+                width: 60%;
+                height: 680px;
+                background-color: #317D78;
+                margin: 0 auto;
+                border-radius: 5px;
+                color: white;
+                border: 3px solid white;
+                font-family: 'Lato', sans-serif;
+            }
+
+            .detail-section{
+                width: 100%;
+                height: 15%;
+                /*background-color: red;*/
+            }
+
+            .user-information{
+                width: 25%;
+                height: 100%;
+                /*background-color: blue;*/
+                float: left;
+                border-right: 2px solid black;
+                border-bottom: 2px solid black;
+                padding-left: 10px;
+                padding-top: 5px;
+            }
+
+            .user-reputation{
+                margin: 0;
+                font-size: 18px;
+            }
+
+            .user-information a{
+                font-size: 24px;
+                text-decoration: none;
+                font-weight: 800;
+                color: white;
+                opacity: 1;
+            }
+
+            .user-information a:hover{
+                cursor: pointer;
+                color: rgba(255, 255, 255, 0.774);
+            }
+
+            .user-bio{
+                width: 75%;
+                height: 100%;
+                /*background-color: purple;*/
+                color: white;
+                float: left;
+                padding-left: 10px;
+                padding-top: 7px;
+                font-weight: 600;
+                border-bottom: 2px solid black;
+            }
+
+            .title-section{
+                width: 100%;
+                height: 15%;
+                /*background-color: white;*/
+                color: white;
+                padding-left: 10px;
+                padding-top: 7px;
+                font-size: 28px;
+                font-weight: 800;
+                border-bottom: 2px solid black;
+            }
+
+            .context-section{
+                width: 100%;
+                height: 12%;
+                padding-left: 10px;
+                padding-top: 7px;
+                font-size: 22px;
+                font-weight: 600;
+                color: white;
+                border-bottom: 2px solid black;
+            }
+
+            .dream-text{
+                width: 100%;
+                height: 50%;
+                /*background-color: black;*/
+                padding-left: 10px;
+                padding-top: 7px;
+                color: white;
+                line-height: 30px;
+                font-size: 17px;
+                border-bottom: 2px solid black;
+            }
+
+            .general-info{
+                width: 100%;
+                height: 8%;
+                /*background-color: red;*/
+                padding-left: 10px;
+                padding-top: 10px;
+            }
+
+            .general-info p{
+                margin: 0;
+                margin-top: 2px;
+                float: right;
+                font-weight: 500;
+                font-size: 18px;
+                margin-right: 550px;
+            }
+
+            .upvote-button{
+                width: 25px;
+                height: 30px;
+                margin: 0;
+                margin-bottom: 15px;
+                opacity: 1;
+            }
+
+            .upvote-button:hover{
+                opacity: 0.7;
+                cursor: pointer;
+            }
+
+            .downvote-button{
+                width: 25px;
+                height: 30px;
+                margin: 0;
+                margin-bottom: 15px;
+                margin-left: 55px;
+                opacity: 1;
+            }
+
+            .downvote-button:hover{
+                opacity: 0.7;
+                cursor: pointer;
+            }
+
+            .upvote-count{
+                color: white;
+                font-family: 'Lato', sans-serif;
+                font-weight: 600;
+                font-size: 18px;
+                position: absolute;
+                margin-left: 15px;
+                margin-right: 10px;
+                margin-top: 3px;
+            }
+
+            .comment-icon{
+                width: 23px;
+                height: 25px;
+                margin-left: 30px;
+                margin-bottom: 15px;
+            }
+
+            .add-comment{
+                width: 60%;
+                height: 190px;
+                background-color: white;
+                margin-left: 285px;
+                border-radius: 5px;
+                color: white;
+                border: 3px solid black;
+                font-family: 'Lato', sans-serif;
+                margin-top: 45px;
+                /*padding-bottom: 300px;*/
+                color: black;
+                padding-left: 10px;
+                padding-top: 10px;
+            }
+
+            .reply-btn{
+                background-color: #1D7B79;
+                width: 120px;
+                color: white;
+                float: right;
+                margin-top: 15px;
+                margin-right: 282px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 900;
+                font-size: 19px;
+                padding: 8px;
+                border-radius: 5px;
+                border: none;
+            }
+
+            .reply-btn:hover{
+                cursor: pointer;
+                background-color: #1d7b79da;
+                color: white;
+            }
+
+            .responses-heading{
+                margin-top: 50px;
+                margin-left: 285px;
+                font-size: 28px;
+                color: black;
+                font-weight: 700;
+            }
+
+            .individual-dream-holder hr{
+                width: 60%;
+                height: 2px;
+                background-color: rgba(0, 0, 0, 0.89);
+            }
+
+            .response-panel{
+                width: 100%;
+                height: 650px;
+                margin: 0 auto;
+                /*background-color: red;*/
+                overflow: auto;
+            }
+
+            .dream-response-container{
+                margin: 0 auto;
+                width: 60%;
+                height: 450px;
+                background-color: white;
+                border-radius: 5px;
+                color: white;
+                border: 3px solid black;
+                font-family: 'Lato', sans-serif;
+                margin-top: 10px;
+                color: black;
+            }
+
+            .response-profile{
+                width: 100%;
+                height: 15%;
+                /*background-color: blue;*/
+                border-bottom: 3px solid black;
+            }
+
+            .username-panel{
+                width: 20%;
+                height: 100%;
+                /*background-color: green;*/
+                padding-left: 12px;
+                padding-top: 12px;
+                font-size: 22px;
+                float: left;
+                border-right: 2px solid black;
+                font-weight: 700;
+            }
+
+            .username-panel a{
+                color: black; 
+                text-decoration: none;
+                opacity: 1;
+            }
+
+            .username-panel a:hover{
+                opacity: 0.6;
+                font-weight: 800;
+            }
+
+            .reputation-panel{
+                width: 80%;
+                height: 100%;
+                /*background-color: purple;*/
+                float: left;
+                padding-left: 12px;
+                padding-top: 18px;
+                font-size: 18px;
+                color: black;
+                font-weight: 500;
+            }
+
+            .overall-upvotes{
+                font-weight: 700;
+            }
+
+            .response-text{
+                width: 100%;
+                height: 70%;
+                line-height: 30px;
+                font-size: 17px;
+                font-weight: 500;
+                padding-left: 10px;
+                padding-top: 5px;
+                border-bottom: 2px solid black;
+            }
+
+            .comment-upvote{
+                padding-left: 10px;
+                height: 30px;
+                width: 35px;
+                opacity: 1;
+                margin-top: 15px;
+                float: left;
+            }
+
+            .comment-upvote:hover{
+                cursor: pointer;
+                opacity: 0.6;
+            }
+
+            .comment-rep{
+                font-family: 'Lato', sans-serif;
+                font-size: 20px;
+                margin: 0;
+                margin-left: 15px;
+                margin-top: 14px;
+                float: left;
+            }
+
+            .comment-downvote{
+                height: 30px;
+                width: 25px;
+                margin-left: 15px;
+                opacity: 1;
+                margin-top: 15px;
+                float: left;
+            }
+
+            .comment-downvote:hover{
+                cursor: pointer;
+                opacity: 0.6;
+            }
+
+            
+            /*END OF SINGLE DREAM STYLES*/
+
+        </style>
+
+    </head>
+    <body style="background-color: #DDEAE9">
+        <div class="navbar-header">
+            <ul>
+                <a href="/home" style="text-decoration: none; color: white;"><li>Home</li></a>
+                <li>Common Themes</li>
+                <a href="/home"><img src="https://i.ibb.co/4NGbz0z/Dream-Team-Logo.png" alt="Dream-Team-Logo" border="0"></a>
+                <li>On Jung</li></a>
+                <li><a href="/login" class="sign_in">Sign In</a></li>
+            </ul>
+        </div>
+
+        <div class="individual-dream-holder">
+            <div class="dream-post-container">
+                <div class="detail-section">
+                    <div class="user-information">
+                        <a href="#"><p class="username">elliot_alderson</p></a>
+                        <p class="user-reputation">2431 <span>upvotes</span></p>
+                    </div>
+                    <div class="user-bio">
+                        Qualified psychologist at Stanford Universtity. My work as been primarily inspired by the works of Jung and have been the foundational building blocks in my career as a psychologist and the way I go about treating my patients.
+                    </div>
+                </div>
+
+                <div class="title-section">
+                        I Dreamt about those darn, forsaken alligators again... what could this possibly mean???
+                </div>
+
+                <div class="context-section">
+                        I recently lost my job and wife and kids and have been very isolated. I have just been sitting at home doing nothing
+                </div>
+
+                <div class="dream-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Nunc mattis enim ut tellus elementum sagittis vitae et. Augue interdum velit euismod in pellentesque. Metus aliquam eleifend mi in nulla. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Dapibus ultrices in iaculis nunc sed augue. Consectetur lorem donec massa sapien faucibus et molestie. In hendrerit gravida rutrum quisque non tellus orci ac auctor. 
+                </div>
+
+                <div class="general-info">
+                        <img class="upvote-button" src="https://i.ibb.co/PsLFwZp/upvote-white.png" alt="upvote-white" border="0">
+
+                        <span class="upvote-count">22</span>
+
+                        <img class="downvote-button" src="https://i.ibb.co/fSPd9rB/downvote-white.png" alt="downvote-white" border="0">
+
+                        <img class="comment-icon" src="https://i.ibb.co/CbdWVYT/comment-icon.png" alt="comment-icon" border="0" width="50px" height="50px">
+
+                        <p><span class="comment-count">63</span> comments</p>
+                </div>
+            </div>
+
+            <textarea class="add-comment" placeholder="Write your reply...."></textarea>
+
+            <br>
+
+            <button class='reply-btn'>REPLY</button>
+
+            <br>
+
+            <h2 class="responses-heading">Responses: </h2>
+            <hr>
+
+            <div class="response-panel">
+                <div class="dream-response-container">
+                    <div class="response-profile">
+                        <div class="username-panel">
+                            <a href="#">jim_rodseth</a>
+                        </div>
+
+                        <div class="reputation-panel">
+                            <p><span class="overall-upvotes">22 </span>overall upvotes</p>
+                        </div>
+                    </div>
+
+                    <div class="response-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Nunc mattis enim ut tellus elementum sagittis vitae et. Augue interdum velit euismod in pellentesque. Metus aliquam eleifend mi in nulla. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Dapibus ultrices in iaculis nunc sed augue. Consectetur lorem donec massa sapien faucibus et molestie. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Nunc mattis enim ut tellus elementum sagittis vitae et. Augue interdum velit euismod in pellentesque. Metus aliquam eleifend mi in nulla. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. 
+                    </div>
+
+                    <div class="ratings-con">
+                        <img class="comment-upvote" src="https://i.ibb.co/F7ZTygs/upvote-black.png" alt="upvote-black" border="0">
+
+                        <p class="comment-rep" style="font-weight: 700">22</p>
+
+                        <img class="comment-downvote" src="https://i.ibb.co/vHCSHVk/downvote-black.png" alt="downvote-black" border="0">
+                    </div>
+                </div>
+
+                <div class="response-panel">
+                <div class="dream-response-container">
+                    <div class="response-profile">
+                        <div class="username-panel">
+                            <a href="#">jim_rodseth</a>
+                        </div>
+
+                        <div class="reputation-panel">
+                            <p><span class="overall-upvotes">22 </span>overall upvotes</p>
+                        </div>
+                    </div>
+
+                    <div class="response-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Nunc mattis enim ut tellus elementum sagittis vitae et. Augue interdum velit euismod in pellentesque. Metus aliquam eleifend mi in nulla. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Dapibus ultrices in iaculis nunc sed augue. Consectetur lorem donec massa sapien faucibus et molestie. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Nunc mattis enim ut tellus elementum sagittis vitae et. Augue interdum velit euismod in pellentesque. Metus aliquam eleifend mi in nulla. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. 
+                    </div>
+
+                    <div class="ratings-con">
+                        <img class="comment-upvote" src="https://i.ibb.co/F7ZTygs/upvote-black.png" alt="upvote-black" border="0">
+
+                        <p class="comment-rep" style="font-weight: 700">22</p>
+
+                        <img class="comment-downvote" src="https://i.ibb.co/vHCSHVk/downvote-black.png" alt="downvote-black" border="0">
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+
+        <div class="footer-panel">
+            <a href="/home"><img src="https://i.ibb.co/4NGbz0z/Dream-Team-Logo.png" alt="Dream-Team-Logo" border="0"></a>
+
+            <p>Copyright © Dream team 2020. All Rights reserved.</p>
+
+            <div class="socials-con">
+                <img src="https://i.ibb.co/bbByJNK/facebook.png" alt="facebook" border="0">
+
+                <img src="https://i.ibb.co/Rp2FhLg/instagram.png" alt="instagram" border="0">
+
+                <img src="https://i.ibb.co/yPKxn8B/twitter.png" alt="twitter" border="0">
+            </div>
+            
+        </div>
+
+        <script 
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"></script>
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" 
+            integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" 
+            crossorigin="anonymous"></script>
+            {% block javascripts %}{% endblock %}
+    </body>
+</html>
