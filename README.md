@@ -3,32 +3,23 @@
 <!-- REPLACE ALL THE [USERNAME] TEXT WITH YOUR GITHUB PROFILE NAME & THE [PROJECTNAME] WITH THE NAME OF YOUR GITHUB PROJECT -->
 <!-- Repository Information & Links-->
 <br />
-![GitHub repo size](https://img.shields.io/github/repo-size/username/projectname?color=%000000)
-![GitHub watchers](https://img.shields.io/github/watchers/username/projectname?color=%000000)
-![GitHub language count](https://img.shields.io/github/languages/count/username/projectname?color=%000000)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/username/projectname?color=%000000)
-[![LinkedIn][linkedin-shield]][linkedin-url]
-[![Instagram][instagram-shield]][instagram-url]
-[![Behance][behance-shield]][behance-url]
 
 <!-- HEADER SECTION -->
-<h5 align="center">Your Name & Surname</h5>
-<h5 align="center">Student Number</h5>
-<h5 align="center" style="padding:0;margin:0;">Your Name & Surname</h5>
-<h5 align="center" style="padding:0;margin:0;">Student Number</h5>
-<h6 align="center">Subject Name & Year</h6>
+<h5 align="center" style="padding:0;margin:0;">Kyle Pharoah</h5>
+<h5 align="center" style="padding:0;margin:0;">200277</h5>
+<h6 align="center">Interactive Development 200</h6>
 <p align="center">
 </br>
 
 <p align="center">
 
-  <a href="https://github.com/username/projectname">
-    <img src="path/to/logo" alt="Logo" width="140" height="140">
+  <a href="https://github.com/xviovx/DreamTeam">
+    <img src="https://i.ibb.co/37Rzzs1/Dream-Team-Logo.png" alt="Logo" width="140" height="140">
   </a>
 @@ -34,8 +34,7 @@
-    <a href="https://github.com/username/projectname/issues">Report Bug</a>
+    <a href="https://github.com/xviovx/DreamTeam/issues">Report Bug</a>
     ·
-    <a href="https://github.com/username/projectname/issues">Request Feature</a>
+    <a href="https://github.com/xviovx/DreamTeam/issues">Request Feature</a>
   </p>
 
 </p>
