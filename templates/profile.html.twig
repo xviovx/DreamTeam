@@ -1,17 +1,14 @@
 {% extends "base.html.twig" %}
 
-{% block title %}Profile Page{% endblock %}
-
 {% block body %}
-<div class="row">
-    <strong>Profile name:</strong> {{ user.name }}
-</div>
-
-<div class="row">
-    <strong>User email:</strong> {{ user.email }}
-</div>
-
-<div class="row">
-    <strong>User bio:</strong> {{ user.bio }}
-</div>
+    <div class="row">
+        This is the profile page of {{ user.username }} ({{ user.email }}) who has {{ user.friends|length}} friends
+    </div>
+    <div class="row">
+        <ul>
+            {% for friend in user.friends %}
+                <li>{{ friend.username }}</li>
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock %}

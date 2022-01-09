@@ -18,23 +18,24 @@
                 background-size: cover;
             }
 
-            .container-fluid img{
-                margin-top: 250px;
-            }
-
             .panel{
                 float: left;
                 width: 45%;
                 height: 880px;
-                padding-top: 50px;
+                padding-top: 40px;
+            }
+
+            .panel img{
+                margin-left: 930px;
+                margin-top: -40px;
             }
 
             .panel h1{
                 font-family: 'Raleway', sans-serif;
                 font-weight: 900;
                 font-size: 78px;
-                margin-top: 240px;
-                margin-left: 400px;
+                margin-top: 160px;
+                margin-left: 350px;
                 color: white;
             }
 
@@ -42,23 +43,35 @@
                 font-family: 'Raleway', sans-serif;
                 font-weight: 800;
                 letter-spacing: 2px;
-                margin-left: 400px;
+                margin-left: 350px;
+                margin-top: 25px;
                 font-size: 24px;
                 color: white;
             }
 
-            form{
+            .profile_pic_display{
+                width: 60px;
+                height: 60px;
+                border-radius: 50px;
+                margin-left: 350px;
+                margin-top: 15px;
                 position: absolute;
+                float: left;
+                background-color: blue;
+            }
+
+            form{
+                position: fixed;
                 float: left;
                 width: 20%;
                 height: 200px;
                 margin-top: 10px;
-                margin-left: 400px;
+                margin-left: 350px;
             }
 
             form h3{
                 font-family: 'Lato', sans-serif;
-                margin-top: 12px;
+                margin-top: 15px;
                 font-weight: 500;
                 font-size: 17px;
                 color: white;
@@ -105,24 +118,24 @@
             <div class="panel">
                 <h1>SIGN IN</h1>
 
-                <h4>AND POST YOUR DREAMS</h4>
+                <h4>POST AND VIEW DREAMS</h4>
 
                 <br>
 
                 <form>
 
-                    <input type="email" id="email" name="email" placeholder="johndoe@gmail.com">
+                    <input type="email" id="email" name="email" placeholder="Email">
 
-                    <input type="password" id="password" name="password" placeholder="Enter password">
+                    <input type="password" id="password" name="password" placeholder="Password">
 
-                    <input type="submit" id="create-account-btn" value="Login">
+                    <input type="submit" id="create-account-btn" value="Sign in">
 
-                    <h3>Don't have an account yet? Create one <a href="/register">here</a></h3>
+                    <h3>Don't have an account yet? Sign up <a href="/register">here</a></h3>
 
                 </form>
             </div>
 
-            <img src="https://i.ibb.co/WVRW9Tb/Dream-Team-Logo-white.png" alt="Dream-Team-Logo-white" border="0" width="660px" height="450px">
+            <img src="https://i.ibb.co/WVRW9Tb/Dream-Team-Logo-white.png" alt="Dream-Team-Logo-white" border="0" width="660px" height="450px" style="margin-top: 250px; margin-left: 60px;">
         </div>
     </body>
 </html>

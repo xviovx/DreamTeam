@@ -1,49 +1,54 @@
 <?php
 
-    // src/Controller/HomeController.php
-    namespace App\Controller;
-    use Symfony\Component\HttpFoundation\Response;
-    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-    //require annotations dependancy that allows us to declare the routes of our controller in this file directly 
-    use Symfony\Component\Routing\Annotation\Route;
+//src/Controller/HomeController.php
+namespace App\Controller;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Routing\Annotation\Route; 
 
-    //controller class HomeController
-    class ProfileController extends AbstractController
-    {
-        //annotation to declare route of method response
-        /**
-            * @Route("/profile/{id}", name="view_profile")
-        */
+use App\Entity\User;
 
-        //method that will respond with HTML
-        public function viewProfile($id = null) // default ID value
-        {
+class ProfileController extends AbstractController{
+//curly braces are wildcard 
+    /**
+     * *@Route("/profile/{id}", name="view_frofile")
+     */
+    public function viewProfile($id = null){//defualt id value
 
-            //error handling when an ID is not supplied
-            if($id == null){
-                return $this->redirectToRoute('error');
-            }
-
-            //access wildcard value
-            $userId = (int) $id;
-
-            //default value
-            $users = [
-                array("id" => 1, "name" => "elliot_alderson", "email" => "el@yahoo.com", "bio" => "Dream analysis is bae"),
-                array("id" => 2, "name" => "xviovx", "email" => "xviovx@gmail.com", "bio" => "Inspired by Jung. Here to analyse dreams")
-            ];
-
-            //identify twig template
-            $view = 'profile.html.twig';
-
-            //loop through dummy data to get user info based on $id
-            foreach($users as $user) {
-                if ($userId === $user['id']) {
-                    $model['user'] = $user;
-                }
-            }
-
-            return $this->render($view, $model);
+        //error handling when id is not supplied
+        if($id==null){
+            return $this -> redirectToRoute('index');
         }
+        //access the wildcard
+        $user_id=(int) $id;
+
+        //using the entity and doctrine to get your database data
+        $user=$this->getDoctrine()
+            ->getRepository(UserProfile::class)
+            -> find ($user_id);
+
+        //create a modal 
+        $model=array();
+
+        //identify a twig template
+        $view='profile.html.twig';
+
+        // foreach($users as $user){
+        //     if($user_id == $user->getId()){
+        //         $model['user']=$user;
+        //     }
+        // }
+
+   return $this->render($view, $model);
     }
+
+       /**
+     * *@Route("/test", name="test")
+     */
+    public function test(){
+        return new Response(
+            '<html><body><h1>Tester</h1></body></html>'
+        );
+    }
+}
 ?>
