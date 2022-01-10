@@ -14,7 +14,7 @@
 <p align="center">
 
   <a href="https://github.com/xviovx/DreamTeam">
-    <img src="https://i.ibb.co/37Rzzs1/Dream-Team-Logo.png" alt="Logo" width="140" height="140">
+    <img src="https://i.ibb.co/37Rzzs1/Dream-Team-Logo.png" alt="Logo" width="170" height="140">
   </a>
 @@ -34,8 +34,7 @@
     <a href="https://github.com/xviovx/DreamTeam/issues">Report Bug</a>
