@@ -14,7 +14,7 @@
 <p align="center">
 
   <a href="https://github.com/xviovx/DreamTeam">
-    <img src="https://i.ibb.co/37Rzzs1/Dream-Team-Logo.png" alt="Logo" width="170" height="140">
+    <img src="https://i.ibb.co/37Rzzs1/Dream-Team-Logo.png" alt="Logo" width="200" height="140">
   </a>
 @@ -34,8 +34,7 @@
     <a href="https://github.com/xviovx/DreamTeam/issues">Report Bug</a>
@@ -41,108 +41,38 @@
 <!-- header image of project -->
 ![image1][image1]
 ### Project Description
-A nice introduction to this amazing project of mine.
+The Dream Team is a Q & A based website, following a Jungian-based psychoanalytic approach, which serves the purpose of allowing users to gain some clarity into the symbols present in their dreams by recieving feedback/ analysis' from users on their dreams. Users are able to post a dream, rate dreams, customize their profiles, view other user's profiles, and view other user's dreams. The website is currently incomplete and only showcases the front-end aspects. The website utlises Symfony, a PHP based application framework for the development (utilising twig templates to showcase the front-end), Composer to install the necessary dependancies, and Heroku to deploy the actual website.
 ### Built With
-* [Technology Name](path/to/technology/website)
-* [Technology Name](path/to/technology/website)
-* [Technology Name](path/to/technology/website)
+* [Symfony](https://symfony.com/)
+* [Composer](https://getcomposer.org/)
+* [Heroku](https://www.heroku.com/)
 <!-- GETTING STARTED -->
 <!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
 ## Getting Started
 The following instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ### Prerequisites
-Ensure that you have the latest version of [Software](path/to/where/they/can/download/software) installed on your machine. The [Plugin](path/to/where/they/can/download/plugin) plugin will also be required.
-### How to install
-### Installation
-Here are a couple of ways to clone this repo:
-1. Software </br>
-`Android Studio` -> `File` -> `New` -> `From Version Control` -> `Git`</br>
-Enter `https://github.com/username/projectname.git` into the URL field and press the `Clone` button.
-2. Clone Repository </br>
-Run the following in the command-line to clone the project:
-   ```sh
-   git clone https://github.com/username/projectname.git
-   ```
-    Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
-3. Install Dependencies </br>
-Run the following in the command-line to install all the required dependencies:
-   ```sh
-   npm install
-   ```
-4. Get a free API Key at [https://example.com](https://example.com) and enter it in the `config.js` file:
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-<!-- FEATURES AND FUNCTIONALITY-->
-<!-- You can add the links to all of your imagery at the bottom of the file as references -->
+Ensure that you have the latest version of [Symfony](https://symfony.com/) installed on your machine. The [Composer](https://getcomposer.org/) plugin will also be required.
 ## Features and Functionality
-![image2][image2]
-### Feature 1
-Description of Feature
-![image3][image3]
-### Feature 2
-Description of Feature
-![image4][image4]
-### Feature 3
-Description of Feature
-![image5][image5]
+### Registering a new account
+New users are able to sign up to the website and register a new account, which is subsequently added to the database
+### Logging in/ logging out
+Users are able to log in and out of the website
+### Post and answer dreams
+Post your dreams that you wish to understand and recieve Jungian-based psychoanalytic responses to and vice versa.
 <!-- CONCEPT PROCESS -->
 <!-- Briefly explain your concept ideation process -->
 ## Concept Process
-The `Conceptual Process` is the set of actions, activities and research that was done when starting this project.
-### Ideation
-![image5][image5]
-<br>
-![image6][image6]
-### Wireframes
-![image7][image7]
+* I began with compiling a moodboard to gain inspiration and choose an appropriate concept for the website.
+* After settling on the concept of the Dream Team, I designed a variety of different logos and compiled lo-fi wireframes to have a rough idea of the design.
+* I then designed the hi-fi wireframes, a user flow diagram, and an entity relationship diagram.
 ### User-flow
-![image8][image8]
+<img src="https://i.ibb.co/XbMXQGW/User-flow-diagram.png" alt="User-flow-diagram" border="0">
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
-The `Development Process` is the technical implementations and functionality done in the frontend and backend of the application.
-### Implementation Process
-<!-- stipulate all of the functionality you included in the project -->
-* Made use of both `functionality` to implement a specific feature.
-* `MVC/MVVM` design architecture implemented.
-* `Plugin` for this.
-* ETC.
-#### Highlights
-<!-- stipulated the highlight you experienced with the project -->
-* Sunshine.
-* Rainbows.
-#### Challenges
-<!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
-* Bugs.
-* Bugs.
-### Reviews & Testing
-<!-- stipulate how you've conducted testing in the form of peer reviews, feedback and also functionality testing, like unit tests (if applicable) -->
-#### Feedback from Reviews
-`Peer Reviews` were conducted by my fellow students and lecturer. The following feedback I found useful:
-* Feedback one.
-* Feedback two.
-#### Unit Tests
-`Unit Tests` were conducted to establish working functionality. Here are all the tests that were ran:
-* Test 1 of this functionality
-* Test 2 of this functionality
-### Future Implementation
-<!-- stipulate functionality and improvements that can be implemented in the future. -->
-* Future 1.
-* Future 2.
-<!-- MOCKUPS -->
-## Final Outcome
-### Mockups
-![image9][image9]
-<br>
-![image10][image10]
-<!-- VIDEO DEMONSTRATION -->
-### Video Demonstration
-To see a run through of the application, click below:
-[View Demonstration](path/to/video/demonstration)
-<!-- ROADMAP -->
-## Roadmap
-See the [open issues](https://github.com/username/projectname/issues) for a list of proposed features (and known issues).
-<!-- CONTRIBUTING -->
+* Installing the necessary technologies
+* Coding the front-end for the website
+* Setting up the database
+* Adding all the necessary functionality
 ## Contributing
 Contributions are what makes the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 1. Fork the Project
@@ -152,22 +82,18 @@ Contributions are what makes the open-source community such an amazing place to 
 5. Open a Pull Request
 <!-- AUTHORS -->
 ## Authors
-* **Your Name & Surname** - [username](https://github.com/username)
+* **Kyle Pharoah** - [xviovx](https://github.com/xviovx)
 <!-- LICENSE -->
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- LICENSE -->
 ## Contact
-* **Your Name & Surname** - [email@address](mailto:email@address) - [@instagram_handle](https://www.instagram.com/instagram_handle/) 
-* **Project Link** - https://github.com/username/projectname
+* **Kyle Pharoah** - [kyle03pharoah@gmail.com](mailto:kyle03pharoah@gmail.com) 
+* **Project Link** - https://github.com/xviovx/DreamTeam
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 <!-- all resources that you used and Acknowledgements here -->
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
+* [Open Window](https://www.openwindow.co.za/)
 <!-- MARKDOWN LINKS & IMAGES -->
 [image1]: /path/to/image.png
 [image2]: /path/to/image.png
